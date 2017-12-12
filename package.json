@@ -70,7 +70,7 @@
     "build:clean": "rimraf -rf bin/ && rimraf -rf tmp/",
     "release": "npm version",
     "version": "npm run build && git add -A bin/",
-    "postversion": "git push && git push --tags && npm publish bin/",
+    "postversion": "git push && git push --tags && npm publish",
     "test": "karma start --single-run",
     "update": "ncu -u -a && npm install",
     "build": "npm run build:clean && webpack",
