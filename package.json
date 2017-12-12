@@ -69,8 +69,6 @@
   "scripts": {
     "build:clean": "rimraf -rf bin/ && rimraf -rf tmp/",
     "release": "npm version",
-    "prepush": "npm test",
-    "preversion": "npm test",
     "version": "npm run build && git add -A bin/",
     "postversion": "git push && git push --tags && npm publish bin/",
     "test": "karma start --single-run",
