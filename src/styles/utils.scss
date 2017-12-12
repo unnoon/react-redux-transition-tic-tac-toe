@@ -1,0 +1,10 @@
+// to be used in either ::before or ::after pseudo elements
+@mixin preload-images($url...)
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: $url
+}

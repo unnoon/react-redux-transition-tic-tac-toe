@@ -1,0 +1,39 @@
+@import './settings';
+
+.board
+{
+    grid-area: main;
+
+    width: 3 * $square-size;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: $square-size $square-size $square-size;
+}
+
+.board-row
+{
+    display: flex; // fixes strange button displacement after setting text
+}
+
+.board-square
+{
+    font-size:   24px;
+    font-weight: bold;
+    line-height: $square-size;
+    text-align:  center;
+
+    width:  $square-size;
+    height: $square-size;
+    border: 1px solid white;
+
+    background: $purple;
+    opacity:    0.8;
+}
+
+.board-square:focus {
+    outline: none;
+}

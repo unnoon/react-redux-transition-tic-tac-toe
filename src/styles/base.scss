@@ -1,0 +1,23 @@
+@import './settings';
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html
+{
+    box-sizing: border-box;
+}
+
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    color: white;
+    background: linear-gradient(to left, $darker-blue, $dark-blue, $dark-blue, $darker-blue);
+}
+
+#root
+{
+
+    display: flex;
+    justify-content: center;
+}

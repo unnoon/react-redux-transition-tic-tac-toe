@@ -1,0 +1,7 @@
+export { default as draw }       from './draw'
+export { default as leaveBoard } from './leaveBoard'
+export { default as enterBoard } from './enterBoard'
+export { default as reset }      from './reset'
+export { default as setSquare }  from './setSquare'
+export { default as switchTurn } from './switchTurn'
+export { default as won }        from './won'

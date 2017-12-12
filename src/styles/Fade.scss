@@ -1,0 +1,30 @@
+@mixin fade-start($start)
+{
+  opacity: $start;
+}
+
+@mixin fade-active($end, $duration)
+{
+  opacity: $end;
+  transition: opacity #{$duration}ms ease-in;
+}
+
+.fade-appear, .fade-enter
+{
+  @include fade-start(0.01);
+}
+
+.fade-appear.fade-appear-active, .fade-enter.fade-enter-active
+{
+  @include fade-active(1, 1000);
+}
+
+.fade-exit
+{
+  @include fade-start(1);
+}
+
+.fade-exit.fade-exit-active
+{
+  @include fade-active(0.01, 800);
+}

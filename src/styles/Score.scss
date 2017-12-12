@@ -1,0 +1,42 @@
+@import './settings';
+@import './utils';
+
+$url-arrow-left:  url('#{$img-path}arrow-left.svg');
+$url-arrow-right: url('#{$img-path}arrow-right.svg');
+
+.score
+{
+    grid-area: header;
+
+    width: 3 * $square-size;
+
+    padding-left: 2px;
+    padding-right: 2px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .color-X {font-weight: bold}
+    .color-O {font-weight: bold}
+}
+
+.icon-arrow-left::before {@include preload-images($url-arrow-left)}
+.icon-arrow-left
+{
+    background-image: url('#{$img-path}arrow-left.svg');
+    background-size: contain;
+    width: 16px;
+}
+
+.icon-arrow-right::before {@include preload-images($url-arrow-right)}
+.icon-arrow-right
+{
+    background-image: url('#{$img-path}arrow-right.svg');
+    background-size: contain;
+    width: 16px;
+}
+
+.hidden
+{
+    visibility: hidden;
+}
