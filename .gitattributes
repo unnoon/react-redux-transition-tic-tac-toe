@@ -1,2 +1,3 @@
-bin/docs/* linguist-documentation
-src/*      linguist-vendored=false
+*.ts       linguist-language=TypeScript
+*.tsx      linguist-language=TypeScript
+
