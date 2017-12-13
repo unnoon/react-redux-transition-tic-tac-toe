@@ -1,1 +1,2 @@
 bin/docs/* linguist-documentation
+src/*      linguist-vendored=false
